@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#6556e8" />
+  <title>مدرستي المرِحة | New School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="grammar.css" />
+  <link rel="stylesheet" href="booklet.css" />
+  <link rel="stylesheet" href="polish.css" />
+</head>
+<body>
+  <a class="skip" href="#main">انتقل إلى المحتوى</a>
+  <header class="topbar">
+    <button class="brand" data-go="home" aria-label="الصفحة الرئيسية"><span>م</span><b>مدرستي المرِحة</b></button>
+    <nav aria-label="التنقل الرئيسي">
+      <button data-go="home" class="nav-btn active">🏠 الرئيسية</button>
+      <button data-go="learn" class="nav-btn">🗺️ الدروس</button>
+      <button data-go="games" class="nav-btn">🎮 الألعاب</button>
+      <button data-go="stories" class="nav-btn">📖 القصص</button>
+      <button data-go="write" class="nav-btn">✏️ دفتري</button>
+      <button data-go="grammar" class="nav-btn">🧠 القواعد</button>
+      <button data-go="booklet" class="nav-btn">🚀 الدليل</button>
+    </nav>
+    <div class="top-actions">
+      <button id="soundToggle" class="icon-btn" aria-pressed="false" title="كتم مؤثرات النجاح">🔊</button>
+      <button data-go="grownups" class="grownup-btn">للمعلم والأسرة</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="view active-view">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">الوحدة 1 • الصف الرابع</span>
+          <h1>جاهز ليوم رائع في <em>New School?</em></h1>
+          <p>تعلّم الكلمات، اقرأ الساعة، احكِ عن أسبوعك، وساعد أصدقاءك في المدرسة الجديدة.</p>
+          <button class="primary big" data-go="learn">ابدأ رحلتي <span>←</span></button>
+          <small>يُحفظ تقدّمك على هذا الجهاز فقط 🔒</small>
+        </div>
+        <div class="school-art" aria-label="رسم مدرسة مبهجة">
+          <div class="cloud c1"></div><div class="cloud c2"></div>
+          <div class="sun">☀</div><div class="school"><div class="flag">★</div><div class="roof"></div><b>NEW<br>SCHOOL</b><div class="door">🚪</div></div>
+          <div class="kid k1">👧🏽<span>Hi!</span></div><div class="kid k2">👦🏻<span>Hello!</span></div>
+        </div>
+      </div>
+
+      <section class="continue-card">
+        <div class="mascot">🦉</div>
+        <div><span class="eyebrow">خطوتك التالية</span><h2 id="nextTitle">اكتشف المدرسة</h2><p id="nextDesc">تعرّف إلى مواد المدرسة والأشخاص والأماكن.</p></div>
+        <div class="progress-wrap"><div class="progress-label"><span>تقدّم الوحدة</span><b id="progressText">0%</b></div><div class="progress"><i id="progressBar"></i></div><span id="starsCount">0 ⭐</span></div>
+        <button class="primary" data-go="learn">تابع التعلّم</button>
+      </section>
+
+      <div class="section-head"><div><span class="eyebrow">اختر مغامرتك</span><h2>مسارات الوحدة</h2></div><button class="text-btn" data-go="learn">شاهد الخريطة ←</button></div>
+      <div class="path-grid">
+        <button class="path-card purple" data-lesson="0"><span class="path-icon">🎒</span><small>الدرس 1</small><h3>مدرستي الجديدة</h3><p>كلمات المدرسة والأشخاص والأماكن</p><b>ابدأ الآن ←</b></button>
+        <button class="path-card coral" data-lesson="1"><span class="path-icon">🕘</span><small>الدرس 2</small><h3>جدولي وأوقاتي</h3><p>الأيام والساعة والمواعيد</p><b>ابدأ الآن ←</b></button>
+        <button class="path-card teal" data-lesson="2"><span class="path-icon">🔁</span><small>الدرس 3</small><h3>ماذا أفعل دائمًا؟</h3><p>العادات وظروف التكرار</p><b>ابدأ الآن ←</b></button>
+        <button class="path-card yellow" data-go="stories"><span class="path-icon">🪁</span><small>قصتان</small><h3>وقت الحكاية</h3><p>مدرستنا الرائعة وطائرة فرس النهر</p><b>اقرأ الآن ←</b></button>
+      </div>
+      <section class="quick-zone"><h2>استراحة ذكية ✨</h2><p>أنشطة قصيرة يمكنك إعادتها متى شئت.</p><div><button data-game="match">🧩 طابق الكلمات</button><button data-game="sound">👂 اسمع واختر</button><button data-game="time">⏰ اقرأ الساعة</button></div></section>
+      <button class="grammar-entry" data-go="grammar"><span>🧠</span><div><small>مسار مستقل جديد</small><h2>مغامرة القواعد الإنجليزية</h2><p>تأسيس من الصفر، 9 وحدات، ألعاب، ومختبر الأفعال غير المنتظمة.</p></div><b>ابدأ ←</b></button>
+      <button class="booklet-entry" data-go="booklet"><span>🚀</span><div><small>مسار مستقل • 23 صفحة</small><h2>دليلك لقواعد اللغة الإنجليزية</h2><p>من أجزاء الكلام إلى الأزمنة وصناعة الأسئلة، في رحلة متدرجة.</p></div><b>انطلق ←</b></button>
+    </section>
+
+    <section id="learn" class="view">
+      <div class="page-title"><span class="eyebrow">خريطة التعلّم</span><h1>رحلة المدرسة الجديدة</h1><p>اختر أي درس. يمكنك العودة إلى الدروس السابقة في أي وقت.</p></div>
+      <div class="lesson-layout">
+        <aside class="lesson-list" id="lessonList"></aside>
+        <article class="lesson-panel" id="lessonPanel"></article>
+      </div>
+    </section>
+
+    <section id="games" class="view">
+      <div class="page-title"><span class="eyebrow">تدرّب والعب</span><h1>صالة الألعاب</h1><p>اقرأ المثال أولًا، ثم اختر إجابتك. الخطأ فرصة للمحاولة من جديد!</p></div>
+      <div class="game-tabs" id="gameTabs"></div>
+      <div class="game-shell" id="gameShell"></div>
+    </section>
+
+    <section id="stories" class="view">
+      <div class="page-title"><span class="eyebrow">قراءة مبسطة</span><h1>مكتبة الحكايات</h1><p>نصوص مبسطة من إعداد المنصة، مرتبطة بموضوعات الكتاب وليست نقلًا حرفيًا منه.</p></div>
+      <div class="story-picker"><button data-story="school" class="active">🏫 Welcome to Our School</button><button data-story="kite">🪁 Hippo’s Kite</button><button data-story="maryam">📔 Maryam’s First Day</button></div>
+      <article id="storyView" class="story-view"></article>
+    </section>
+
+    <section id="write" class="view">
+      <div class="page-title"><span class="eyebrow">خطّط ← اكتب ← حسّن</span><h1>دفتر الكاتب الصغير</h1><p>اكتب عن مادتك المفضلة. أنت الكاتب، ونحن نقدم لك أدوات مساعدة.</p></div>
+      <div class="writer-grid">
+        <aside class="word-bank"><h2>بنك الكلمات</h2><div class="chips" id="wordBank"></div><h3>قالب مساعد</h3><button class="template" data-template="My favourite subject is … I like it because … I also …">My favourite subject is …<br>I like it because …<br>I also …</button><button id="showModel" class="secondary">شاهد نموذجًا مساعدًا</button><div id="modelText" hidden><b>نموذج:</b><p dir="ltr">My favourite subject is Science. I like it because experiments are exciting. I also enjoy working with my friends.</p></div></aside>
+        <div class="paper"><label for="draft">مسودتي</label><textarea id="draft" dir="ltr" placeholder="My favourite subject is ..."></textarea><div class="paper-actions"><span id="saveState">محفوظ محليًا</span><button id="saveDraft" class="primary">حفظ المسودة</button></div></div>
+        <aside class="checklist"><h2>افحص كتابتك</h2><label><input type="checkbox"> بدأت بحرف كبير</label><label><input type="checkbox"> استخدمت because لذكر السبب</label><label><input type="checkbox"> استخدمت also لإضافة فكرة</label><label><input type="checkbox"> ختمت الجمل بنقطة</label><label><input type="checkbox"> راجعت الإملاء بنفسي</label><p>هذه قائمة فحص ذاتي وليست تصحيحًا آليًا للمعنى.</p></aside>
+      </div>
+      <section class="project"><div><span class="eyebrow">مشروع الوحدة</span><h2>ملصق مدرستي المثالية</h2><p>أدخل أفكارك ثم عاين الملصق واطبعه.</p><div class="form-grid"><label>اسم المدرسة<input id="pName" value="Sunrise School"></label><label>كيف نصل؟<input id="pTravel" value="We walk to school."></label><label>دروس مفضلة<input id="pSubjects" value="Science and Art"></label><label>أشياء مميزة<input id="pSpecial" value="A garden and computers"></label></div></div><div id="poster" class="poster"><span>MY IDEAL SCHOOL</span><h3>Sunrise School</h3><div>🏫 🌳 💻 🎨</div><p>We walk to school.</p><p>Our favourites: Science and Art</p><p>A garden and computers</p></div><button id="printPoster" class="primary">🖨️ طباعة الملصق</button></section>
+    </section>
+
+    <section id="grammar" class="view grammar-view">
+      <div class="grammar-head"><div><span class="eyebrow">مسار مستقل • قواعد الصف الرابع</span><h1>مغامرة القواعد 🧠</h1><p>افهم القاعدة، شاهدها في موقف، ثم ابنِ جملتك بنفسك.</p></div><div class="grammar-progress"><b id="grammarPercent">0%</b><span>تقدّم القواعد</span><div class="progress"><i id="grammarBar"></i></div></div></div>
+      <div class="grammar-nav" id="grammarNav"><button data-gsection="journey" class="active">🗺️ رحلتي</button><button data-gsection="foundation">🧱 التأسيس</button><button data-gsection="units">📚 الوحدات</button><button data-gsection="arena">🎮 الألعاب</button><button data-gsection="verbs">⚗️ الأفعال</button><button data-gsection="notebook">✍️ الجمل</button><button data-gsection="review">🔁 مراجعتي</button><button data-gsection="reference">📄 المرجع</button></div>
+      <div id="grammarContent" class="grammar-content"></div>
+    </section>
+
+    <section id="booklet" class="view booklet-view">
+      <div class="booklet-head"><div><span class="eyebrow">مسار مستقل • لا يتبع منهجًا رسميًا محددًا</span><h1>دليلك لقواعد الإنجليزية 🚀</h1><p>تعلّم خطوة صغيرة، اسمع المثال، ثم جرّب بنفسك.</p></div><div class="booklet-score"><b id="bookletPercent">0%</b><span>من الرحلة مكتمل</span><div class="progress"><i id="bookletBar"></i></div></div></div>
+      <div class="booklet-nav" id="bookletNav"><button data-bsection="path" class="active">🗺️ رحلتي</button><button data-bsection="start">🌱 البداية</button><button data-bsection="words">🧩 الكلمات والجمل</button><button data-bsection="tenses">⏳ الأزمنة</button><button data-bsection="questions">❓ الأسئلة</button><button data-bsection="play">🎮 الألعاب</button><button data-bsection="write">✍️ دفتري</button><button data-bsection="review">🔁 مراجعتي</button><button data-bsection="source">📄 الكتيب</button></div>
+      <div id="bookletContent" class="booklet-content"></div>
+    </section>
+
+    <section id="grownups" class="view">
+      <div class="page-title"><span class="eyebrow">مساحة منفصلة للكبار</span><h1>دليل المعلم وولي الأمر</h1><p>خريطة مرجعية وأهداف قابلة للملاحظة. المقترحات أدناه تعليمية وليست تعليمات رسمية للمنهج.</p></div>
+      <div class="adult-grid">
+        <article><h2>خريطة المحتوى والمصدر</h2><table><thead><tr><th>المسار</th><th>صفحات الكتاب</th></tr></thead><tbody><tr><td>المفردات والجدول والقواعد</td><td>14–27</td></tr><tr><td>Welcome to Our School</td><td>28–31</td></tr><tr><td>Hippo’s Kite</td><td>32–35</td></tr><tr><td>دعم النشاط والقواعد</td><td>110–111</td></tr></tbody></table><p class="note">أرقام الصفحات مطبوعة؛ موضعها داخل PDF يزيد صفحة واحدة في هذا الملف.</p></article>
+        <article><h2>أهداف قابلة للملاحظة</h2><ul><li>يسمّي المتعلم 8 مفردات مدرسية على الأقل.</li><li>يسأل ويجيب عن اليوم والوقت والتكرار.</li><li>يرتب أحداث نص قصير ويستدل على شعور شخصية.</li><li>يكتب 3 جمل مترابطة مستخدمًا because وalso.</li></ul></article>
+        <article><h2>أخطاء شائعة وعلاجها</h2><ul><li><b>She have</b> ← ثبّت النمط: <span dir="ltr">She has</span>.</li><li><b>Does he has?</b> ← بعد does يعود الفعل إلى <span dir="ltr">have</span>.</li><li><b>at Monday</b> ← الأيام تأخذ <span dir="ltr">on</span>، والأوقات <span dir="ltr">at</span>.</li><li>ضع always/often قبل الفعل العادي، وبعد be.</li></ul></article>
+        <article><h2>خطة حصة مرنة (40 دقيقة)</h2><ol><li>تهيئة وتشخيص — 5 دقائق</li><li>اكتشاف واستماع — 8 دقائق</li><li>نمذجة وتدريب موجّه — 10 دقائق</li><li>لعبة ثنائية — 10 دقائق</li><li>تذكرة خروج — 7 دقائق</li></ol></article>
+        <article><h2>الدعم والإثراء</h2><p><b>دعم:</b> قلّل الخيارات، استخدم الصور وقالب الجملة، واسمح بإعادة الاستماع.</p><p><b>إثراء:</b> يبرر المتعلم اختياره، يضع جدولًا جديدًا، أو يقترح موعدًا بديلًا.</p><p><b>القيم:</b> الصداقة، التعاون، الترحيب بالطالب الجديد، وتنظيم الوقت.</p></article>
+        <article><h2>حدود التقنية والخصوصية</h2><p>الصوت نطق آلي من المتصفح وليس تسجيل الناشر. لا يوجد تقييم موثوق لنطق الطفل أو تصحيح كامل لكتابته. تُحفظ النتائج والمسودات محليًا فقط، بلا حسابات أو مزامنة أو تتبع.</p><button id="resetData" class="danger">مسح بيانات هذا الجهاز</button></article>
+        <article><h2>خريطة مسار القواعد المستقل</h2><p><b>المتطلبات السابقة:</b> الضمائر، فعل be، أجزاء الجملة وصور الفعل.</p><p><b>ترتيب مقترح:</b> تأسيس ← وحدات 1–6 ← مختبر الأفعال ← وحدات 7–9 ← مراجعة مختلطة.</p><p><b>تقويم:</b> سؤال تشخيصي، تحقق قصير بكل وحدة، سجل مفاهيم تحتاج مراجعة، وتحديات ألعاب.</p><p><b>خارج الشاشة:</b> مقارنة أدوات الصف، تمثيل موقف نصيحة، وبطاقات تصريف ثلاثية.</p><p class="note">هذا الترتيب والدعم والإثراء إضافات تعليمية مقترحة، وليست تعليمات رسمية للمنهج.</p></article>
+        <article><h2>دليل مسار «دليلك للقواعد»</h2><p><b>الترتيب المقترح:</b> أجزاء الكلام والضمائر ← الكلمات وبناء الجملة ← الأزمنة ← صناعة الأسئلة. المستقبل المستمر مرحلة متقدمة لكنه متاح.</p><p><b>هدف ملاحظ:</b> يصنّف الطفل الكلمة، يبني جملة، يختار الزمن والمساعد، ويشرح سبب اختياره.</p><p><b>دعم:</b> خياران وقالب مسموع وبطاقات كلمات. <b>إثراء:</b> صياغة مثال بديل وتحويله إلى نفي وسؤال.</p><p><b>خارج الشاشة:</b> ترتيب بطاقات جملة، البحث عن حروف جر في الغرفة، وتمثيل حدث الآن وآخر بالأمس.</p><p><b>التقويم:</b> اختبار بداية غير حاجز، سؤال في كل درس، سجل مراجعة، وتحدٍ مختلط.</p><p class="note">راجع قسم «الكتيب» داخل المسار للاطلاع على بيان التصحيحات العلمية. الصوت آلي والتقييم المغلق فقط دقيق؛ الكتابة الحرة ذاتية/بإشراف المعلم.</p></article>
+      </div>
+    </section>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <footer><b>مدرستي المرِحة</b><span>تعلّم بفضول، وجرّب من جديد 🌱</span><button data-go="grownups">معلومات للمعلم والأسرة</button></footer>
+  <script src="grammar-data.js"></script>
+  <script src="booklet-data.js"></script>
+  <script src="app.js"></script>
+  <script src="grammar.js"></script>
+  <script src="booklet.js"></script>
+</body>
+</html>
+
